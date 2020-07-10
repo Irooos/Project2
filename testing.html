@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <input id="search" type="search" />
+    <button id="submit">Submit</button>
+    <!--<img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif" />
+    <img src="https://media1.giphy.com/media/GBbkH7cJiVu9y/giphy.gif" />
+    <img src="https://media1.giphy.com/media/HXpzpXB5syQGQ/giphy.gif" />
+    <img src="https://media0.giphy.com/media/X9Y9qYPUp1VMQ/giphy.gif" />
+    <img src="https://media0.giphy.com/media/uuocoePH1mkVy/giphy.gif" />
+    <img src="https://media0.giphy.com/media/4ml290TZ35zOM/giphy.gif" />
+    <img src="https://media1.giphy.com/media/8O6EY0lahfInC/giphy.gif" />
+    <img src="https://media3.giphy.com/media/A7GowSMfBhq6Y/giphy.gif" />
+    <img src="https://media1.giphy.com/media/dQxSeXsXtf2Lu/giphy.gif" />
+    <img src="https://media1.giphy.com/media/PzrPi0UVzgYHm/giphy.gif" />
+    -->
+<script>
+    $(document).ready(()=>{ /*Detect submit*/ 
+
+$("#submit").click(()=>{
+    let userInput = $("#search").val() /*Input id for search*/
+    alert(userInput) /*Replaces 'alert!' with userInput*/
+})
+$.ajax({
+    url:'http://api.giphy.com/v1/gifs/search?q=maine-coon&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G'
+})
+.done((res)=>{  
+    let gifs = res.Search;
+    $.each(gifs, (i, e)=>{
+        let media = e.url;
+        console.log("url" ,media)
+        $("body").append('<img src="${media}" alt="url media" />')
+    })
+
+})
+
+})
+</script>
+</body>
+</html>
