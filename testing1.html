@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>-->
 </head>
 <body>
 
     <input id="search" type="search" />
-    <button id="submit">Submit</button>
-    <!--<img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif" />
+   <button onclick="searchGif()" id="submit">Submit</button> 
+   <br> 
+   <br> 
+   <br>
+
+   <!--<div id="gifs">
+    <img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif" />
     <img src="https://media1.giphy.com/media/GBbkH7cJiVu9y/giphy.gif" />
     <img src="https://media1.giphy.com/media/HXpzpXB5syQGQ/giphy.gif" />
     <img src="https://media0.giphy.com/media/X9Y9qYPUp1VMQ/giphy.gif" />
@@ -19,28 +28,17 @@
     <img src="https://media3.giphy.com/media/A7GowSMfBhq6Y/giphy.gif" />
     <img src="https://media1.giphy.com/media/dQxSeXsXtf2Lu/giphy.gif" />
     <img src="https://media1.giphy.com/media/PzrPi0UVzgYHm/giphy.gif" />
-    -->
+    
+    </div>-->
 <script>
-    $(document).ready(()=>{ /*Detect submit*/ 
-
-$("#submit").click(()=>{
-    let userInput = $("#search").val() /*Input id for search*/
-    alert(userInput) /*Replaces 'alert!' with userInput*/
-})
-$.ajax({
-    url:'http://api.giphy.com/v1/gifs/search?q=maine-coon&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G'
-})
-.done((res)=>{  
-    let gifs = res.Search;
-    $.each(gifs, (i, e)=>{
-        let media = e.url;
-        console.log("url" ,media)
-        $("body").append('<img src="${media}" alt="url media" />')
-    })
-
-})
-
-})
+   function searchGif (){
+       var input = $('#search').val();
+       $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G&limit=1',function(response)
+       {
+           $('#img').html("<img src="+response.data[0].images.downsized_large.url+">")
+       }
+       )
+   }
 </script>
 </body>
 </html>
