@@ -1,8 +1,9 @@
 * {
   box-sizing: border-box;
 }
-h1 {
-  text-align: center;
+.h1 {
+  text-align: center!important;
+  flex: 25%;
 }
 .outer-grid {
   display: flex;
@@ -25,6 +26,8 @@ h1 {
      max-width: 50%;
   }
 }
+.col-1 {width 25%;}
+.col-2
 @media screen and (max-width: 600px) {
   .inner-grid {
      flex: 100%;
