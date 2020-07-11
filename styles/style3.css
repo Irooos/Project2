@@ -7,3 +7,9 @@
 .gifContainer{
 	margin-bottom: 10px;
 }
+
+@media (max-width:629px) {
+	img#optionalstuff {
+	  display: none!important;
+	}
+  }
