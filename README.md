@@ -5,7 +5,7 @@ index.html will be my main page
 
 **indextesting.html is my main test page**
 
-**testing1.html,script1.js: api & js**
+**testing1.html,script1.js: api & js** file location: scripts\script1.js
 
 testing2.html,responsive2.css: navbar 
 
