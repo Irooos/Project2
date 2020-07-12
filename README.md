@@ -3,7 +3,7 @@ Shannon McCutcheon
 
 index.html will be my main page
 
-indextesting.html is my main test page
+**indextesting.html is my main test page**
 
 **testing1.html,script1.js: api & js**
 
