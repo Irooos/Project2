@@ -11,13 +11,13 @@
     <title>API Test</title>
 </head>
 <body>
-
-   
+    <input class="form-control mr-sm-2" type="search" placeholder="Search">  
+    <button class="btn btn-outline-success my-2 my-sm-0" id="searchgifs" type="submit">Search</button>
    <br> 
    <br> 
    <br>
 
-   <!--<div id="gifs">
+   <!--<div class="inner">
     <img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif" />
     <img src="https://media1.giphy.com/media/GBbkH7cJiVu9y/giphy.gif" />
     <img src="https://media1.giphy.com/media/HXpzpXB5syQGQ/giphy.gif" />
@@ -31,14 +31,10 @@
     
     </div>-->
 <script>
-   function searchGif (){
-       var input = $('#search').val();
-       $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G&limit=1',function(response)
-       {
-           $('#img').html("<img src="+response.data[0].images.downsized_large.url+">")
-       }
-       )
-   }
+   
+
+
+
 </script>
 </body>
 </html>

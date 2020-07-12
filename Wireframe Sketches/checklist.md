@@ -4,11 +4,11 @@
 **3) GitHub Repo
 **4) Clone
 **5) API Key
-6) Review 'Search Endpoint'
+**6) Review 'Search Endpoint'
 7) Add 15 commits with descriptions
 
 **1) 1 Html Page with multiple links in the navbar
-2) Input field, search bar, & submit button
+**2) Input field, search bar, & submit button
 3) Able to search gifs from the api
 ???4) Iterate through the returned data, and for each returned object in the array, find an image in the returned JSON and append that image to the screen???
 5) 3 files:html,css,scss,js
@@ -20,7 +20,7 @@
 **10) Create a custom grid class in css
 
 11) Use @media:
--Your site title and navbar stack vertically
+**-Your site title and navbar stack vertically
 **-Your navigation items stack vertically
 **-Your images stack vertically in a single column
 

@@ -40,7 +40,8 @@ $("#submit").click(()=>{
     alert(userInput) /*Replaces 'alert!' with userInput*/
 })
 $.ajax({
-    url:''
+    url:'
+http://api.giphy.com/v1/gifs/search?q=maine-coon&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G'
 })
 .done((res)=>{  
     let gifs = res.Search;
