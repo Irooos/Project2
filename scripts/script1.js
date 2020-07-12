@@ -1,4 +1,4 @@
-/***function getData(){
+/*test 1**function getData(){
 var input = $("#searchtext").val()
 var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaT0xFJmzC=5");
 xhr.done(function(response) { 
@@ -13,11 +13,21 @@ xhr.done(function(response) {
     }
         });
     }***/
+    
+
+/*test 2** 
+function searchGif (){
+       var input = $('#search').val();
+       $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G&limit=20',function(response)
+       {
+           $('#img').html("<img src="+response.data[20].images.downsized_large.url+">")
+       }
+       )
+   }
+***/
 
 
-
-
-    /***var api = "http://api.giphy.com/v1/gifs/search";
+    /*test 3**var api = "http://api.giphy.com/v1/gifs/search";
     var apiKey = "&api_key=dc6zaT0xFJmzC";
     var_query = "&q=rainbow"
 
