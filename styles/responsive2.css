@@ -1,6 +1,6 @@
 
 .navbar {
-    text-align: center;
+    /*text-align: center;*/
     padding-top: 20px;
     padding-bottom: 20px; 
     
@@ -15,6 +15,9 @@
   }
 .search {  
     flex: 1;  
+  }
+  .button {
+    flex: 1;
   }
 .container > li {  
     flex: 1;  

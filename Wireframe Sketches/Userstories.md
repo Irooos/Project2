@@ -21,3 +21,15 @@ CSS/SASS
 - Screen Size
     - View from mobile, tablet and desktop
 - Make all Navbars same color, text
+
+
+
+7/12/20
+Technical
+-search bar & 3 links on the left side (in desktop)
+-'Giphy' in center (in mobile)
+-search bar smaller with btn next to it or both in center(in mobile)
+-finalize the grid
+-add footer
+
+-create js function with ajax
