@@ -58,9 +58,9 @@ http://api.giphy.com/v1/gifs/search?q=maine-coon&api_key=lmkpW3GGTV7iiw3UXzPZqvq
 <!--<script>
    function searchGif (){
        var input = $('#search').val();
-       $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G&limit=1',function(response)
+       $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G&limit=20',function(response)
        {
-           $('#img').html("<img src="+response.data[0].images.downsized_large.url+">")
+           $('#img').html("<img src="+response.data[20].images.downsized_large.url+">")
        }
        )
    }
