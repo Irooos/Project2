@@ -1,3 +1,9 @@
+/**My api key 
+ http://api.giphy.com/v1/gifs/search?q=maine+coon&api_key=lmkpW3GGTV7iiw3UXzPZqvqSrWIq3s5G
+***/
+
+
+
 /*test 1**function getData(){
 var input = $("#searchtext").val()
 var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaT0xFJmzC=5");
