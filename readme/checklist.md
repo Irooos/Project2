@@ -11,12 +11,12 @@
 **2) Input field, search bar, & submit button
 3) Able to search gifs from the api
 ???4) Iterate through the returned data, and for each returned object in the array, find an image in the returned JSON and append that image to the screen???
-5) 3 files:html,css,scss,js
+**5) 3 files:html,css,scss,js
 
--->6) Use scss
--->7) Choose a google font
-8) Use flex for site name and navbar: aligned to the sides of the header
-9) Use flex for the input field & submit button: appear side by side
+**6) Use scss
+**7) Choose a google font
+**8) Use flex for site name and navbar: aligned to the sides of the header
+**9) Use flex for the input field & submit button: appear side by side
 **10) Create a custom grid class in css
 
 11) Use @media:
@@ -32,6 +32,6 @@
 • Ideas for future improvement (minimum of 3)
 
 Final Touches (Not in requirements)
-1) Downsize to 3-4 files
+-->1) Downsize to 3-4 files
 2) A footer with github link
-3) Add more styles
+-->3) Add more styles
