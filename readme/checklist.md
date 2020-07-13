@@ -1,4 +1,4 @@
--->1) 2 user stories
+**1) 2 user stories
 **2) Wireframes for both desktop/mobile
 
 **3) GitHub Repo
@@ -19,14 +19,14 @@
 **9) Use flex for the input field & submit button: appear side by side
 **10) Create a custom grid class in css
 
-11) Use @media:
+**11) Use @media:
 **-Your site title and navbar stack vertically
 **-Your navigation items stack vertically
 **-Your images stack vertically in a single column
 
 12) A readme.md file in the root project folder that contains the following information about your project:
 **• Your name
-• Overview/description of the project
+**• Overview/description of the project
 • Details on how to use it or what functionality is offered
 • Technologies Used ( .html , .css )
 • Ideas for future improvement (minimum of 3)
@@ -34,4 +34,5 @@
 Final Touches (Not in requirements)
 -->1) Downsize to 3-4 files
 2) A footer with github link
--->3) Add more styles
+-->3) Add more styles (having background issues)
+ -Change the nav class and style it
