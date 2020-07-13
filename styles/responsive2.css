@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Modak', cursive;
+  src: url (Modak-Regular_ttf)
+}
+div {
+  font-family: 'Modak', cursive;
+  font-weight: bold;
+  
+}
 
 .navbar {
-    /*text-align: center;*/
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px; 
     
@@ -8,6 +17,7 @@
 .navbar-brand {
   flex: 1;
 }
+
 #logo {
     width: 30px;
     height: 30px; 
@@ -19,11 +29,28 @@
 .search {  
     flex: 1;  
   }
-  .button {
+  .btn {
     flex: 1;
+    text-align: center;
   }
 .container > li {  
     flex: 1;  
+  }
+
+@media all and (max-width: 1000px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .container > li {
+      flex-basis: 50%;
+    }
+    .search {  
+      order: 1;       
+    }
+    .btn {
+      order: 1;
+      flex-wrap: wrap;   
+    }
   }
 
 @media all and (max-width: 600px) {  
@@ -33,14 +60,23 @@
     .container > li {  
       flex-basis: 50%;  
     }
-  
+    .search {  
+      order: 1;    
+    }
+    .btn {
+      order: 1;
+      flex-wrap: wrap;   
+    }
   }
 @media all and (max-width: 400px) {  
     .container > li {  
       flex-basis: 100%;  
     }  
     .search {  
-      order: 1;  
+      order: 1;     
     }  
-    
+    .btn {
+      order: 1;
+      flex-wrap: wrap;   
+    }
   }
