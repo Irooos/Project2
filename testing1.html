@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style1.css" />
-    
-    <title>API Test</title>
-</head>
-<body>
-    <input class="form-control mr-sm-2" type="search" placeholder="Search">  
-    <button class="btn btn-outline-success my-2 my-sm-0" id="searchgifs" type="submit" onclick="getData()">Search</button>
-   <br> 
-   <br> 
-   <br>
-<script></script>
-<!--<div class="inner">
-    <img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif" />
-    <img src="https://media1.giphy.com/media/GBbkH7cJiVu9y/giphy.gif" />
-    <img src="https://media1.giphy.com/media/HXpzpXB5syQGQ/giphy.gif" />
-    <img src="https://media0.giphy.com/media/X9Y9qYPUp1VMQ/giphy.gif" />
-    <img src="https://media0.giphy.com/media/uuocoePH1mkVy/giphy.gif" />
-    <img src="https://media0.giphy.com/media/4ml290TZ35zOM/giphy.gif" />
-    <img src="https://media1.giphy.com/media/8O6EY0lahfInC/giphy.gif" />
-    <img src="https://media3.giphy.com/media/A7GowSMfBhq6Y/giphy.gif" />
-    <img src="https://media1.giphy.com/media/dQxSeXsXtf2Lu/giphy.gif" />
-    <img src="https://media1.giphy.com/media/PzrPi0UVzgYHm/giphy.gif" />
-    
-</div>-->
-    <!--<script src="scripts/script1.js"></script>-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-</body>
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
+      <link rel="stylesheet" href="css/style.min.css" />
+      <link rel="stylesheet" href="styles/responsive2.css" />
+      <link rel="stylesheet" href="styles/responsive3.css" />
+      <title>Giphy Page</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
+          <a class="navbar-brand" href="#"><img src="img/S-icon.png" width="30" height="30" id="logo" class="d-inline-block" alt="">Giphy</a>   
+          <div id="collapsingNavbar4">
+            <ul class="navbar-nav"> 
+              
+                <li class="nav-item active"><a class="nav-link" href="#">Link</a></li>  
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="search active"></li>
+                <form class="form-inline" val="">
+                  <input id="search" class="form-control mr-sm-2" type="text" placeholder="Search" value="">
+                  <button class="btn btn-outline-success my-2 my-sm-0" id="searchgifs" type="submit">Search</button>
+                </form>
+            </ul>  
+        </div>
+      </nav>
+    </div> 
+ <br>
+ <br>
+  <h1>Maine Coon</h1>
+    <div class="container">
+      <div class="grid">
+       <div class="cell">
+          <div id="img"></div>
+        </div>  
+      </div>
+    </div>
+     <div class="container" id="img">
+        <!--<div class="grid">
+          <div class="cell">
+            <img src="https://media3.giphy.com/media/hRPoV9O14t3vW/giphy.gif"  class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media1.giphy.com/media/GBbkH7cJiVu9y/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media1.giphy.com/media/HXpzpXB5syQGQ/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media0.giphy.com/media/X9Y9qYPUp1VMQ/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media0.giphy.com/media/uuocoePH1mkVy/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media0.giphy.com/media/4ml290TZ35zOM/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media1.giphy.com/media/8O6EY0lahfInC/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media3.giphy.com/media/A7GowSMfBhq6Y/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media1.giphy.com/media/dQxSeXsXtf2Lu/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media1.giphy.com/media/PzrPi0UVzgYHm/giphy.gif" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="https://media3.giphy.com/media/oSjo0hqDMiDAs/giphy.gif" class="responsive-image" />  
+          </div>
+        </div>
+      </div>-->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="js/masonry.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+      <script src="scripts/script1.js"></script>
+  </body>
 </html>

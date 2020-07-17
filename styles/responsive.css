@@ -1,43 +1,90 @@
-div.one-third {
-    width: 47.5%;
+@font-face {
+    font-family: 'Modak', cursive;
+    src: url (Modak-Regular_ttf)
 }
 
-div.one-third-second {
-    margin: 0;
+div {
+    font-family: 'Modak', cursive;
+    font-weight: bold;  
 }
 
-div.one-third-last {
-    clear: both;
-    float: none;
-    width: auto;
-    padding: 20px 0 0 0;
+.navbar { 
+  padding-top: 20px;
+  padding-bottom: 20px;      
 }
 
-div.nav ul li {
-    width: 25%;
-    border-bottom: 1px solid #bababa;
+.navbar-brand {
+  flex: 1;
 }
 
-@media screen and (max-width: 620px) {
-    div.nav ul li {
-        width: 33%;
-    }
+#logo {
+  width: 30px;
+  height: 30px; 
+  display: flex;  
 }
-/*13:41*/
-/*for images and text columns at 9:00, can even list all the elements*/
-@media screen and (max-width: 500px) {
-    div.nav ul {
-        width: 50%;
-        font-size: 85%;
-    }
-    div.mobile-collapse {
-        width: auto;
-        float: none;
-        margin-right: 0;
-    }
+  
+.container {  
+  display: flex;  
+}
+    
+.search {  
+  flex: 1;  
+}
 
-    /*10:00 for hide*/
-    .hide-mobile {
-        display: none;
-    }
+.btn {
+  flex: 1; 
+}
+
+.container > li {  
+  flex: 1;  
+}
+
+  /*Media*/
+
+@media all and (max-width: 400px) {
+  .container {  
+    flex-direction: column;  
+  }    
+  .container > li {  
+    flex-basis: 100%;  
+  }  
+  .search {  
+    order: 1;     
+  }  
+  .btn {
+    order: 1;
+    flex-direction: column;   
+  }
+}
+
+@media all and (max-width: 600px) {  
+  .container {  
+    flex-direction: column;  
+  }  
+  .container > li {  
+    flex-basis: 50%;  
+  }
+  .search {  
+    order: 1;    
+  }
+  .btn {
+    order: 1;
+    flex-direction: column;  
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > li {
+    flex-basis: 100%;
+  }
+  .search {  
+    order: 1;       
+}
+  .btn {
+    order: 1;
+      flex-direction: column;   
+  } 
 }

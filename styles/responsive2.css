@@ -4,12 +4,9 @@
 }
 div {
   font-family: 'Modak', cursive;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
-
 .navbar {
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px; 
     
@@ -31,7 +28,7 @@ div {
   }
   .btn {
     flex: 1;
-    text-align: center;
+    
   }
 .container > li {  
     flex: 1;  
@@ -39,7 +36,7 @@ div {
 
 @media all and (max-width: 1000px) {
     .container {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     .container > li {
       flex-basis: 50%;
@@ -49,13 +46,13 @@ div {
     }
     .btn {
       order: 1;
-      flex-wrap: wrap;   
+      flex-direction: column;  
     }
   }
 
 @media all and (max-width: 600px) {  
     .container {  
-      flex-wrap: wrap;  
+      flex-direction: column;  
     }  
     .container > li {  
       flex-basis: 50%;  
@@ -65,7 +62,7 @@ div {
     }
     .btn {
       order: 1;
-      flex-wrap: wrap;   
+      flex-direction: column;  
     }
   }
 @media all and (max-width: 400px) {  
@@ -77,6 +74,6 @@ div {
     }  
     .btn {
       order: 1;
-      flex-wrap: wrap;   
+      flex-direction: column;   
     }
   }

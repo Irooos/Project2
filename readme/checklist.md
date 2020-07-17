@@ -32,7 +32,8 @@
 • Ideas for future improvement (minimum of 3)
 
 Final Touches (Not in requirements)
--->1) Downsize to 3-4 files
+**1) Downsize to 3-4 files
+ -> Clean up code
 2) A footer with github link
 -->3) Add more styles (having background issues)
- -Change the nav class and style it
+ -> Change the nav class and style it
